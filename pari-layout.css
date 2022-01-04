@@ -1,0 +1,1284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --main-color: #242939;;
+  
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+main.pari-beauty-body{
+    width: 100%;
+    display: flex;
+    font-family:Helvetica, "sans-serif";
+    color: #181C32;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    margin: 5px;
+    
+
+}
+ nav ul li a{
+    color: #989EB3;;
+    text-decoration: none;
+    padding: 10px;
+    font-weight:normal;
+    border-radius: 5px;
+   
+
+  
+}
+nav ul li a:hover{
+    background-color: rgba(77, 89, 149, 0.06);;
+    color: #3699FF;
+
+}
+
+
+.pari-form-card{
+    background-color: white;
+    width: 31%;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 20px;
+}
+.pari-beauty-card-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pari-beauty-card-head h4{
+    color: #B5B5C3;
+    line-height: 30px;
+}
+
+/* start sidebar design */
+
+
+#pari-beauty-sidebar-toggle {
+    display: none;
+}
+
+.pari-form-sidebar {
+    
+    width: 260px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: var(--main-color);
+    height:400vh;
+    color: rgb(152, 158, 179);
+    overflow-y: auto;
+    transition: width 500ms;
+}
+
+.pari-beauty-sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0rem 1rem;
+}
+
+
+.pari-beauty-sidebar-menu {
+    padding: 1rem;
+    background-color: var(--main-color);
+   
+}
+.pari-beauty-brand{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 20px;
+    
+}
+a.pari-beauty-menu{
+    display: flex;
+    justify-content: space-between;
+    color: #989EB3;
+   
+    
+}
+
+.pari-form-sidebar li {
+    margin: 5px 0px;
+    padding:10px 7px;
+}
+.pari-form-sidebar li:hover{
+    background-color: #181C32;;
+}
+.pari-form-sidebar a {
+   
+    font-size: .8rem;
+}
+
+.pari-form-sidebar a strong:last-child {
+    padding-left: .6rem;
+}
+
+#pari-beauty-sidebar-toggle:checked ~ .pari-form-sidebar {
+    width: 60px;
+}
+
+#pari-beauty-sidebar-toggle:checked ~ .pari-form-sidebar .pari-beauty-sidebar-header h3 strong,
+#pari-beauty-sidebar-toggle:checked ~ .pari-form-sidebar li strong:last-child {
+    display: none;
+}
+
+#pari-beauty-sidebar-toggle:checked ~ .pari-form-sidebar .pari-beauty-sidebar-header,
+#pari-beauty-sidebar-toggle:checked ~ .pari-form-sidebar li {
+    display: flex;
+    justify-content: center;
+}
+
+#pari-beauty-sidebar-toggle:checked ~ .pari-beauty-main-content {
+    margin-left: 60px;
+}
+
+#pari-beauty-sidebar-toggle:checked ~ .pari-beauty-main-content header {
+    left: 60px;
+    width: calc(100% - 60px);
+}
+.pari-beauty-combine{
+    display: flex;
+    justify-content: space-between;
+}
+.pari-beauty-combine p{
+    margin-right: 52px;
+}
+label{
+    padding-right: 27px;
+}
+
+/* end sidebar design */
+
+/* header section start */
+.pari-beauty-main-content {
+    position: relative;
+    margin-left: 260px;
+    transition: margin-left 500ms;
+}
+
+header {
+    width: 81%;
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: white;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.pari-beauty-social-icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:20px 30px
+}
+.pari-beauty-social-icons img{
+    margin: 0px 15px;
+    height:20px;
+    width:20px;
+}
+
+/* header section end */
+
+/* main section start */
+
+main.pari-beauty-main {
+ 
+    background: #E4E6EF;
+   
+    padding: 1rem 3rem;
+}
+
+main.pari-beauty-main {
+    margin-top: 60px;
+    
+    padding: 2rem 2rem;
+}
+main.pari-beauty-main .pari-beauty-dashboard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.pari-beauty-dashboard button{
+    padding: 8px 15px;
+     color: #181C32;;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+.pari-beauty-dashboard button.report{
+    color: white;
+    background-color:#3699FF ;
+}
+.fa.fa-user-plus{
+    color: #3699FF;
+}
+
+/* first section start */
+.pari-beauty-first{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.pari-beauty-card-body-first{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    align-items: stretch;
+}
+.pari-beauty-card-body-first h1{
+   padding-left: 20px;
+}
+.pari-beauty-card-body-first .pari-beauty-sale{
+    font-size: 15px;
+    color: #989EB3;
+    margin-right: 4px;
+}
+.pari-beauty-cir-progress{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 10px;
+}
+.pari-beauty-dot img{
+    height:5.5px;
+    width: 5px;
+}
+.pari-beauty-dotone img{
+    height:4.5px;
+    width: 4px;
+}
+
+.pari-beauty-radio li{
+    line-height: 15px;
+    list-style: none;
+    font-size: 15px;
+    color: #989EB3;
+}
+.pari-beauty-radio .pari-beauty-dot{
+    font-size: 50px;
+    
+}
+.pari-beauty-order{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.pari-beauty-prog{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 80%;
+}
+.pari-beauty-prog-first{
+    height: 120px;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 8px;
+    background: #E1F0FF; ;
+    
+ }
+ .pari-beauty-prog-first::after{
+     content: "";
+     position: absolute;
+     height: 30%;
+     width: 100%;
+     border-radius: 50px;
+     background: #3699FF  ;
+     bottom: 0;
+ }
+ .pari-beauty-prog-second{
+    height: 120px;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 8px;
+    background: #E1F0FF; ;
+    
+ }
+ .pari-beauty-prog-second::after{
+     content: "";
+     position: absolute;
+     height: 80%;
+     width: 100%;
+     border-radius: 50px;
+     background: #3699FF  ;
+     bottom: 0;
+ }
+ .pari-beauty-prog-third{
+    height: 120px;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 8px;
+    background: #E1F0FF; ;
+    
+ }
+ .pari-beauty-prog-third::after{
+     content: "";
+     position: absolute;
+     height: 50%;
+     width: 100%;
+     border-radius: 50px;
+     background: #3699FF  ;
+     bottom: 0;
+ }
+ .pari-beauty-prog-fourth{
+    height: 120px;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 8px;
+    background: #E1F0FF; ;
+    
+ }
+ .pari-beauty-prog-fourth::after{
+     content: "";
+     position: absolute;
+     height: 20%;
+     width: 100%;
+     border-radius: 50px;
+     background: #3699FF  ;
+     bottom: 0;
+ }
+ .pari-beauty-prog-fifth{
+    height: 120px;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 8px;
+    background: #E1F0FF; ;
+    
+ }
+ .pari-beauty-prog-fifth::after{
+     content: "";
+     position: absolute;
+     height: 30%;
+     width: 100%;
+     border-radius: 50px;
+     background: #3699FF  ;
+     bottom: 0;
+ }
+ .pari-beauty-prog-sixth{
+    height: 120px;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 8px;
+    background: #E1F0FF; ;
+    
+ }
+ .pari-beauty-prog-sixth::after{
+     content: "";
+     position: absolute;
+     height: 75%;
+     width: 100%;
+     border-radius: 50px;
+     background: #3699FF  ;
+     bottom: 0;
+ }
+ 
+/* first section end */
+
+/* second section start */
+
+.pari-beauty-second{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.pari-beauty-card-second{
+    background-color: white;
+    width: 65.5%;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.pari-beauty-new-nav ul li a:hover{
+    color: black;
+}
+ ul li a.pari-beauty-active{
+    color: white;
+    background-color: #181C32;;
+    
+}
+.pari-beauty-small-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 25px 0;;
+
+}
+.pari-beauty-s-box{
+    background-color: white;
+    color:#989EB3 ;
+    cursor: pointer;
+    padding:20px 14px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 20px rgb(228, 224, 224);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.pari-beauty-s-box em{
+    margin-bottom: 10px;
+}
+.pari-beauty-box-active{
+    color: white;
+    background-color: #3699FF ;
+}
+.pari-beauty-author-container{
+    margin-bottom: 20px;
+}
+.pari-beauty-Author{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    line-height: 20px;
+}
+ h5{
+    color: #B5B5C3;
+    line-height: 22px;
+}
+a>h4{
+    color: #3F4254;
+}
+.pari-beauty-pro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pari-beauty-pro h5{
+    margin-right: 5px;
+}
+.pari-beauty-progress-first{
+    height: 6px;
+   position: relative;
+   border-radius: 20px;
+  
+   width: 62px;
+   background: #d3d4da ;
+   
+}
+.pari-beauty-progress-first::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 65%;
+    border-radius: 15px;
+    background: #FFA800 ;
+}
+.pari-beauty-progress-second{
+    height: 6px;
+   position: relative;
+   border-radius: 20px;
+  
+   width: 62px;
+   background: #d3d4da ;
+   
+}
+.pari-beauty-progress-second::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 83%;
+    border-radius: 15px;
+    background: #1BC5BD;
+}
+.pari-beauty-progress-third{
+    height: 6px;
+   position: relative;
+   border-radius: 20px;
+  
+   width: 62px;
+   background: #d3d4da ;
+   
+}
+.pari-beauty-progress-third::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 47%;
+    border-radius: 15px;
+    background: #3699FF  ;
+}
+.pari-beauty-progress-fourth{
+    height: 6px;
+   position: relative;
+   border-radius: 20px;
+  
+   width: 62px;
+   background: #d3d4da ;
+   
+}
+.pari-beauty-progress-fourth::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 71%;
+    border-radius: 15px;
+    background: #F64E60 ;
+}
+
+.pari-beauty-table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+table{
+    margin: 27px 0;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #3F4254;
+    background-color: transparent;
+    border-collapse: separate;
+    border-spacing: 16px 30px;
+    
+    
+    
+}
+table img{
+    height: 23px;
+    width: 23px;
+}
+.pari-beauty-end{
+    text-align: end;
+}
+
+.pari-beauty-img-td{
+    padding:0px 10px;
+    background-color: #F3F6F9;;
+    border-radius: 5px;
+}
+
+td input.pari-beauty-in-first{
+    color: #3699FF;
+    background-color: #E1F0FF;
+    border:none;
+    padding:5px 13px;
+    border-radius: 5px;
+}
+td input.pari-beauty-in-second{
+    color: #FFA800;
+    background-color: #FFF4DE;
+    border:none;
+    padding:5px 13px;
+    border-radius: 5px;
+}
+td input.pari-beauty-in-third{
+    color: #1BC5BD;
+    background-color: #C9F7F5;
+    border:none;
+    padding:5px 13px;
+    border-radius: 5px;
+}
+td input.pari-beauty-in-fourth{
+    color: #3699FF;
+    background-color: #E1F0FF;
+    border:none;
+    padding:5px 13px;
+    border-radius: 5px;
+}
+td input.pari-beauty-in-fifth{
+    color: #F64E60;
+    background-color: #FFE2E5;
+    border:none;
+    padding:5px 13px;
+    border-radius: 5px;
+}
+/* section second end */
+
+/* third section start */
+
+
+.pari-beauty-third{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+progress{
+    height: 10px;
+    width: 100%;
+}
+.fa.fa-pencil-square-o, .fa.fa-trash.blue-icon{
+    background-color: #F3F6F9;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px 10px;
+    color: #3699FF ;
+}
+.pari-beauty-card-body-second{
+    display: flex;
+    margin: 20px 0px;
+    flex-direction: column;
+}
+.pari-beauty-card-body-second h3{
+    margin-bottom: 10px;
+}
+.pari-beauty-card-body-second p{
+    margin: 12px 0 25px 0;
+    font-size: 16px;
+    line-height: 20.5px;
+}
+.pari-beauty-card-body-second .pari-beauty-time{
+    color: #3699FF;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.pari-beauty-card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pari-beauty-card-footer .pari-beauty-btn-1{
+    color: #3699FF;
+    background-color: #E1F0FF;
+    border: none;
+    padding:10px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+.pari-beauty-card-footer .pari-beauty-btn-2{
+    color: #FFFFFF;
+    background-color: #3699FF;
+    border-color: #3699FF;
+    padding:10px 15px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+
+}
+.pari-beauty-card-footer h4{
+    color: #B5B5C3;
+}
+.pari-beauty-card-footersub{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+    
+}
+/* third section end */
+
+/* fourth section start */
+.pari-beauty-fourth .pari-form-card{
+    width: 100%;
+}
+.pari-beauty-fourth .pari-beauty-new{
+    color: #FFFFFF;
+    background-color: #3699FF;
+    border-color: #3699FF;
+    padding: 8px 15px;
+    
+    border: none;
+    border-radius: 5px;
+}
+.pari-beauty-fourth .pari-beauty-symbol-first{
+    width:50px;
+    height:50px;
+    background-color: #E1F0FF;
+    color: #3699FF;
+    text-align: center;
+    border-radius: 5px;
+}
+.pari-beauty-fourth .pari-beauty-symbol-second{
+    width:50px;
+    height:50px;
+    background-color: #C9F7F5;
+    color: #1BC5BD;
+    text-align: center;
+    border-radius: 5px;
+}
+.pari-beauty-fourth .pari-beauty-symbol-third{
+    width:50px;
+    height:50px;
+    background-color: #FFE2E5;
+    color: #F64E60;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.pari-beauty-fourth .pari-beauty-pro-flex{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.pari-beauty-sub{
+    padding-left: 30px;
+}
+.pari-beauty-bar{
+    padding-left: 50px;
+}
+.pari-beauty-progress-fifth{
+    height: 6px;
+   position: relative;
+   border-radius: 20px;
+  
+   width: 200px;
+   background: #d3d4da ;
+   
+}
+.pari-beauty-progress-fifth::after{
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 79%;
+    border-radius: 50px;
+    background: #F64E60 ;
+}
+.pari-beauty-progress-sixth{
+    height: 6px;
+   position: relative;
+   border-radius: 20px;
+  
+   width: 200px;
+   background: #d3d4da ;
+   
+}
+.pari-beauty-progress-sixth::after{
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 65%;
+    border-radius: 50px;
+    background: #3699FF  ;
+}
+
+.pari-beauty-progress-seventh{
+    height: 6px;
+   position: relative;
+   border-radius: 20px;
+  
+   width: 200px;
+   background: #d3d4da ;
+   
+}
+.pari-beauty-progress-seventh::after{
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 84%;
+    border-radius: 50px;
+    background: #1BC5BD   ;
+}
+.pari-beauty-progress-eighth{
+    height: 6px;
+   position: relative;
+   border-radius: 20px;
+  
+   width: 200px;
+   background: #d3d4da ;
+   
+}
+.pari-beauty-progress-eighth::after{
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 47%;
+    border-radius: 50px;
+    background: #3699FF  ;
+}
+.pari-beauty-progress-ninth{
+    height: 6px;
+   position: relative;
+   border-radius: 20px;
+  
+   width: 200px;
+   background: #d3d4da ;
+   
+}
+.pari-beauty-progress-ninth::after{
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 72%;
+    border-radius: 50px;
+    background: #FFA800 ;
+}
+
+
+/* fourth section end */
+
+
+/* fifth section start */
+
+.pari-beauty-fifth{
+    display: flex;
+    justify-content: space-between;
+}
+.card-body3{
+    display: flex;
+    margin: 20px 0px;
+    flex-direction: column;
+}
+.pari-beauty-fifth .pari-beauty-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+.pari-beauty-box-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.pari-beauty-box-width{
+    width:40px;
+    height:40px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 10px;
+   
+   
+    
+}
+.pari-beauty-addition{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.pari-beauty-box-width p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+   
+}
+.pari-beauty-box-width.pari-beauty-paraone{
+    background-color: #E1F0FF;
+    color: #3699FF;
+    
+}
+.pari-beauty-box-width.pari-beauty-paratwo{
+    background-color: #C9F7F5;
+    color: #1BC5BD;
+}
+.pari-beauty-box-width.pari-beauty-parathree{
+    background-color: #FFE2E5;
+    color: #F64E60;
+}
+.pari-beauty-box-width.pari-beauty-parafour{
+    background-color: #E1F0FF;
+    color: #3699FF;
+
+}
+.pari-beauty-fifth h5{
+    color: #B5B5C3;
+    font-weight:bolder;
+}
+.pari-beauty-fifth h4.pari-beauty-dollar{
+    color: #7E8299;
+    font-weight:700;
+    
+}
+.pari-beauty-fifth h5.pari-beauty-percent-positive{
+    color: #1BC5BD;
+}
+.pari-beauty-fifth h5.pari-beauty-percent-negative{
+    color: #F64E60 ;
+}
+.fa.fa-angle-left,.fa.fa-angle-right.greycolor-arrow{
+    background-color: #F3F6F9;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:8px 14px;
+    color: #B5B5C3;
+}
+
+.fa.fa-angle-right.color-arrow{
+    color: #1BC5BD;
+    font-size: 20px;
+    padding:8px 14px;
+    background-color: #F3F6F9;
+    border-radius: 5px;
+   margin-left: 13px;
+   
+   
+}
+.pari-beauty-box-width img{
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    
+
+}
+.fa.fa-caret-right{
+   font-size: 30px;
+   margin: 6px 15px;
+}
+
+/* fifth section end */
+/* footer section start */
+footer{
+    width: 100%;
+
+   
+    display: flex;
+    justify-content: space-between;
+    height: 11vh;
+    background-color: white;
+    align-items: center;
+    padding: 0 20px;
+}
+
+footer .pari-beauty-footer-end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer h5{
+    color:#989EB3 ;
+    margin-right: 10px;
+}
+strong.strong{
+    color: #989EB3;
+}
+/* footer section end */
+
+/* media query start */
+@media (min-width:768px) and (max-width: 1199px){
+    main.pari-beauty-body{
+       
+        display: flex;
+        flex-direction: column;
+        font-family:Helvetica, "sans-serif";
+        color: #181C32;
+    }
+    main.pari-beauty-main {
+        margin-top: 80px;
+        
+        padding: .6rem 1rem;
+        ;
+    }
+    header{
+        width:100%;
+    }
+    
+    aside.pari-form-sidebar{
+        background-color: #242939;
+        width: 100%;
+        height: 15vh;
+       
+    }
+    aside.pari-beauty-main-content{
+        background-color: #E4E6EF;
+        width:100%;
+    }
+  
+    
+    .pari-beauty-first{
+        display: flex;
+       
+        flex-direction: column;
+       
+    }
+    label{
+        padding-right: 10px;
+    }
+    .pari-form-card{
+        background-color: white;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 30px;
+        padding: 20px;
+    }
+    .pari-beauty-card-body-first{
+        display: flex;
+       flex-direction: row;
+        margin-top: 35px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .pari-beauty-prog{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        width: 20%;
+    }
+    .pari-beauty-cir-progress{
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        margin-top: 10px;
+    }
+    .pari-beauty-card-second{
+        background-color: white;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 30px;
+        padding: 20px;
+    }
+    .pari-beauty-third{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pari-beauty-fifth{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pari-beauty-card-footersub{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       
+        
+    }
+    progress{
+        width: 100%;
+    }
+    .pari-beauty-s-box{
+        background-color: white;
+        color:#989EB3 ;
+        cursor: pointer;
+        padding:20px 80px;
+        border-radius: 5px;
+        box-shadow: 2px 1px 20px rgb(228, 224, 224);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        
+    }
+    .pari-beauty-box-active{
+        color: white;
+        background-color: #3699FF ;
+    }
+   
+   
+}
+
+
+
+.table-responsive {
+    overflow-x: auto;
+}
+@media (min-width:0px) and (max-width: 768px) {
+
+    .pari-beauty-cir-progress{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        margin-top: 10px;
+    }
+    .pari-beauty-dashboard{
+        display: flex;
+        flex-direction: column;
+       
+       
+    
+    }
+    .pari-beauty-dashboard button{
+        padding: 8px 10px;
+         color: #181C32;;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        margin-right: 10px;
+
+    }
+    .pari-beauty-social-icons{
+        margin-top: 2px;
+    }
+    ul h4{
+        padding-left: 20px;
+    }
+   
+    
+}
+@media only screen and (max-width: 1080px){
+    main.pari-beauty-body{
+       
+        display: flex;
+        flex-direction: column;
+        font-family:Helvetica, "sans-serif";
+        color: #181C32;
+    }
+    main.pari-beauty-main {
+        margin-top: 80px;
+        
+        padding: .6rem 1rem;
+        ;
+    }
+   header{
+       width: 100%;
+       align-items: center;
+   }
+  
+    
+    aside.pari-form-sidebar{
+        background-color: #242939;
+        width: 100%;
+        height: 15vh;
+       
+    }
+    aside.pari-beauty-main-content{
+        background-color: #E4E6EF;
+        width:100%;
+    }
+  
+    
+    .pari-beauty-first{
+        display: flex;
+       
+        flex-direction: column;
+       
+    }
+    .pari-form-card{
+        background-color: white;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 30px;
+        padding: 20px;
+    }
+    .pari-beauty-card-body-first{
+        display: flex;
+       flex-direction: row;
+        margin-top: 35px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .pari-beauty-prog{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        width: 20%;
+    }
+    .pari-beauty-cir-progress{
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        margin-top: 10px;
+    }
+    .pari-beauty-card-second{
+        background-color: white;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 30px;
+        padding: 20px;
+    }
+    .pari-beauty-third{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pari-beauty-fifth{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pari-beauty-card-footersub{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       
+        
+    }
+    progress{
+        width: 100%;
+    }
+    
+   
+   
+}
+
+@media only screen and (max-width: 1200px) {
+    .pari-form-sidebar {
+        width: 60px;
+        z-index: 150;
+    }
+
+    .pari-form-sidebar .pari-beauty-sidebar-header h3,
+    .pari-form-sidebar li strong:last-child {
+        display: none;
+    }
+
+    .pari-form-sidebar .pari-beauty-sidebar-header,
+    .pari-form-sidebar li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pari-beauty-main-content {
+        margin-left: 60px;
+    }
+
+    .pari-beauty-main-content header {
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+    
+    #pari-beauty-sidebar-toggle:checked ~ .pari-form-sidebar {
+        width: 260px;
+    }
+
+    #pari-beauty-sidebar-toggle:checked ~ .pari-form-sidebar .pari-beauty-sidebar-header h3,
+    #pari-beauty-sidebar-toggle:checked ~ .pari-form-sidebar li strong:last-child {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #pari-beauty-sidebar-toggle:checked ~ .pari-form-sidebar .pari-beauty-sidebar-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #pari-beauty-sidebar-toggle:checked ~ .pari-form-sidebar li {
+        display: block;
+    }
+
+    #pari-beauty-sidebar-toggle:checked ~ .pari-beauty-main-content {
+        margin-left: 60px;
+    }
+
+ 
+}
+
+
+
+
+
+
